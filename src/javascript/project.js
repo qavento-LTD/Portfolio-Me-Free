@@ -1,5 +1,6 @@
 let projects = [
-  { img: "public/img/imgproject/project_website.png", name: "jolt", paragraph: "A modern and contemporary online store with a light touch of elegance and an attractive design.", code: ""}
+/*
+  { img: "public/img/imgproject/project_website.png", name: "jolt", paragraph: "A modern and contemporary online store with a light touch of elegance and an attractive design.", code: ""} */
 ];
 
 let project = document.querySelector('.projects');
