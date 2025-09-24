@@ -25,7 +25,7 @@
   border: 1px solid var(--color-bluish-purple);
   transition: border-color 0.3s ease;
   background: transparent;
-  color: white;
+  color: black;
 }
 
 .contact-form input:focus,
