@@ -1,0 +1,16 @@
+footer{
+  background: black;
+  margin-top: 30px;
+  padding: 30px;
+  text-align: center;
+}
+footer {
+  color: white;
+}
+footer div p{
+  font-weight: 300;
+  font-size: 10px;
+}
+footer a{
+  color: white;
+}

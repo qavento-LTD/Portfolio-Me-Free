@@ -1,0 +1,43 @@
+.link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+nav{
+  position: fixed;
+  left: 0;top: 0;bottom: 0;right: 0;
+  background: #1A1A1F;
+  box-shadow: 0 0 10px #000000;
+  margin-left: 600px;
+}
+.platform{
+  margin-top: 3px;
+}
+.platform ul{
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+.platform img{
+  width: 20px;
+}
+nav ul{
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30%;
+}
+nav ul a{
+  color: white;
+  text-decoration: none;
+}
+nav ul a:hover{
+  color: #0063FF;
+}
+.menu{
+  z-index: 7;
+  position: relative;
+}
