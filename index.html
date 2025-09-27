@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="src/css/project.css">
   <link rel="stylesheet" href="src/css/form.css">
   <link rel="stylesheet" href="src/css/footer.css">
+  <link rel="stylesheet" href="src/css/buttontop.css">
 </head>
 <body>
 <header>
@@ -27,6 +28,7 @@
         <span>Qafost</span>
       </a>
     </div>
+    <button class="btn_top">^</button>
     <!-- platform and links -->
     <div class="link">
       <nav>
@@ -134,8 +136,11 @@
   <label for="name">Your Name</label>
   <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
-  <label for="email">Your Email</label>
-  <input type="email" id="email" name="email" placeholder="Enter your email" required />
+   <label for="email">Your Email</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+
+  <label for="tel">Your Phone</label>
+  <input type="tel" id="tel" name="tel" placeholder="+20 123 4567 890" pattern="^01[0125]\d{8}$" inputmode="tel"  required/>
 
   <label for="message">Message</label>
   <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
@@ -173,5 +178,6 @@
   <script src="src/javascript/menu.js"></script>
   <script src="src/javascript/skills.js"></script>
   <script src="src/javascript/project.js"></script>
+  <script src="src/javascript/scroll.js"></script>
 </body>
 </html>
