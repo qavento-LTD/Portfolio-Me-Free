@@ -1,184 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- icon website  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <!-- SEO -->
+  <meta name="description" content="Mohammed Khaled - Full Stack Web Developer. Portfolio showcasing projects, skills, and contact details." />
+
+  <!-- icon website -->
   <link rel="shortcut icon" href="public/img/iconwebsite.png" type="image/png" />
-  <title>mohammed khaled</title>
-  <link rel="stylesheet" href="src/css/main.css">
-  <link rel="stylesheet" href="src/css/variable.css">
-  <link rel="stylesheet" href="src/css/navbar.css">
-  <link rel="stylesheet" href="src/css/header.css">
-  <link rel="stylesheet" href="src/css/skill.css">
-  <link rel="stylesheet" href="src/css/responsive/computer.css">
-  <link rel="stylesheet" href="src/css/about.css">
-  <link rel="stylesheet" href="src/css/project.css">
-  <link rel="stylesheet" href="src/css/form.css">
-  <link rel="stylesheet" href="src/css/footer.css">
-  <link rel="stylesheet" href="src/css/buttontop.css">
+
+  <title>Mohammed Khaled | Full Stack Developer</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/css/variable.css" />
+  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="stylesheet" href="src/css/navbar.css" />
+  <link rel="stylesheet" href="src/css/header.css" />
+  <link rel="stylesheet" href="src/css/skill.css" />
+  <link rel="stylesheet" href="src/css/about.css" />
+  <link rel="stylesheet" href="src/css/project.css" />
+  <link rel="stylesheet" href="src/css/form.css" />
+  <link rel="stylesheet" href="src/css/footer.css" />
+  <link rel="stylesheet" href="src/css/buttontop.css" />
+  <link rel="stylesheet" href="src/css/responsive/computer.css" />
 </head>
 <body>
-<header>
-  <div class="container">
-    <div class="logo">
-      <a href="#">
-        <img src="public/img/logo.png" alt="icon logo"/>
-        <span>Qafost</span>
-      </a>
-    </div>
-    <button class="btn_top">^</button>
-    <!-- platform and links -->
-    <div class="link">
-      <nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#">
+          <img src="public/img/logo.png" alt="Qafost Logo" />
+          <span>Qafost</span>
+        </a>
+      </div>
+
+      <!-- Back to top button -->
+      <button class="btn_top" aria-label="Back to top">^</button>
+
+      <!-- Navigation -->
+      <nav class="link">
         <ul>
-          <li>
-            <a href="#main">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-            </li>
-          <li>
-            <a href="#skills">Skill</a>
-          </li>
-          <li>
-            <a href="#project">Project</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-      <div class="platform">
+
+        <!-- Social links -->
+        <div class="platform">
           <ul>
-          <li>
-            <a target="_blank" href="https://github.com/qavento-LTD">
-            <img src="public/icon/github.svg" alt="icon github" width="25">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.linkedin.com/in/mohammed-khaled-7a87aa384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-            <img src="public/icon/linkedin.svg" alt="icon linkedin" width="25"></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://wa.me/201122499841">
-            <img src="public/icon/whatsapp.svg" alt="icon whatsapp" width="25"></a>
-          </li>
-        </ul>
+            <li>
+              <a target="_blank" href="https://github.com/qavento-LTD" aria-label="GitHub">
+                <img src="public/icon/github.svg" alt="" width="25" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/mohammed-khaled-7a87aa384" aria-label="LinkedIn">
+                <img src="public/icon/linkedin.svg" alt="" width="25" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://wa.me/201122499841" aria-label="WhatsApp">
+                <img src="public/icon/whatsapp.svg" alt="" width="25" />
+              </a>
+            </li>
+          </ul>
         </div>
-        <img src="public/icon/menu.svg" alt="icon menu" class="menu">
+      </nav>
+       <img src="public/icon/menu.svg" alt="Menu icon" class="menu" />
     </div>
-  </div>
-</header>
-  <!-- main -->
-<main id="main">
-  <!-- hero -->
-  <article class="hero">
-    <div class="title">
-      <h1>Full Stack 
-      <span>developer</span>
-      </h1>
-      <p>Hello, my name is Mohammed. I work as a website programmer. I have experience in the web field and I seek to develop it.</p>
-      <a href="public/CV/cv-mohammed.pdf" download class="btn">
-        CV Download</a>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="title">
+        <h1>Full Stack <span>Developer</span></h1>
+        <p>Hello, my name is Mohammed. I work as a website programmer. I have experience in web development and I seek to improve it.</p>
+        <a href="public/CV/cv-mohammed.pdf" download class="btn">Download CV</a>
       </div>
-      <div class="Initial">
-        <img src="public/img/iconwebsite.png" alt="Initial images">
+
+      <div class="initial">
+        <img src="public/img/iconwebsite.png" alt="Profile illustration" loading="lazy" />
       </div>
-  </article>
-  
-  
-  
-  
-  
-    <!-- about -->
-  <section id="about">
+    </section>
+
+    <!-- About -->
+    <section id="about">
       <div class="about-img">
-        <img src="public/img/iconwebsite.png" alt="img about" width="250">
+        <img src="public/img/iconwebsite.png" alt="About me image" width="250" loading="lazy" />
       </div>
       <div class="about-title">
-        <h3><span>About</span> me!</h3>
-        <p>🎓 I'm a high-school student passionate about Web Development and exploring C++ programming.
-          💻 Currently, I’m focusing on improving my skills, building projects, and maintaining my Portfolio.</p>
-        <a href="public/CV/cv-mohammed.pdf" download class="btn2">CV Download</a>
+        <h2><span>About</span> Me</h2>
+        <p>🎓 I'm a high-school student passionate about Web Development and exploring C++ programming.  
+        💻 Currently, I’m focusing on improving my skills, building projects, and maintaining my Portfolio.</p>
+        <a href="public/CV/cv-mohammed.pdf" download class="btn2">Download CV</a>
       </div>
     </section>
-    
-    
-    
-    
-    <!-- skills -->
+
+    <!-- Skills -->
     <section id="skills">
-      <h2>skills</h2>
-      <div id="all_skills">
-        
-      </div>
+      <h2>Skills</h2>
+      <div id="all_skills"></div>
     </section>
-      
-      
-      
-      <!-- project -->
-      <section id="project">
-        <h2>project</h2>
-        <div class="projects"></div>
+
+    <!-- Projects -->
+    <section id="project">
+      <h2>Projects</h2>
+      <div class="projects"></div>
     </section>
-    
-    
-    
-    
-    
-    <!-- contant -->
+
+    <!-- Contact -->
     <section id="contact">
       <form action="https://api.sheetmonkey.io/form/hAnXb44GinZ93QZAwt8iYy" method="post" class="contact-form">
-  <h2>Contact Me</h2>
+        <h2>Contact Me</h2>
 
-  <label for="name">Your Name</label>
-  <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
-   <label for="email">Your Email</label>
-  <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
 
-  <label for="tel">Your Phone</label>
-  <input type="tel" id="tel" name="tel" placeholder="+20 123 4567 890" pattern="^01[0125]\d{8}$" inputmode="tel"  required/>
+        <label for="tel">Your Phone</label>
+        <input type="tel" id="tel" name="tel" placeholder="+20 123 4567 890" pattern="^01[0125]\d{8}$" inputmode="tel" required />
 
-  <label for="message">Message</label>
-  <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
 
-  <button type="submit" class="submitMessage">Send Message</button>
-</form>
+        <button type="submit" class="submitMessage">Send Message</button>
+      </form>
     </section>
   </main>
-  
-  
-  
-  
-  
-  
-  
-  <!-- footer -->
+
+  <!-- Footer -->
   <footer>
     <div class="footer">
       <div>
-        <h3>mohammed khaled</h3>
+        <h3>Mohammed Khaled</h3>
         <p>Indeed, those who have believed and done righteous deeds - never will We allow to be lost the reward of any who did well in deeds.</p>
       </div>
     </div>
-    <hr width="98%" style="
-    margin:10px  auto  20px auto; 
-    "/>
+    <hr class="footer-line" />
     <div>
-      <div>
-        <a href="#">All rights reserved©2025</a>
-      </div>
+      <a href="#">All rights reserved ©2025</a>
     </div>
   </footer>
-  <!--menu click js -->
-  
-  <script src="src/javascript/menu.js"></script>
-  <script src="src/javascript/skills.js"></script>
-  <script src="src/javascript/project.js"></script>
-  <script src="src/javascript/scroll.js"></script>
-  <script src="src/javascript/remove_input.js"></script>
+
+  <!-- Scripts -->
+  <script src="src/javascript/menu.js" defer></script>
+  <script src="src/javascript/skills.js" defer></script>
+  <script src="src/javascript/project.js" defer></script>
+  <script src="src/javascript/scroll.js" defer></script>
+  <script src="src/javascript/remove_input.js" defer></script>
 </body>
 </html>
