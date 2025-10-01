@@ -56,3 +56,394 @@ html {
   color: black;
   border: 1.5px solid #000000;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*
+==============================
+==== navbar and platform =====
+==============================
+*/ 
+.link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+nav{
+  position: fixed;
+  left: 0;top: 0;bottom: 0;right: 0;
+  background: #1A1A1F;
+  box-shadow: 0 0 10px #000000;
+  margin-left: 600px;
+  transition: .3s ease;
+}
+.platform{
+  margin-top: 3px;
+}
+.platform ul{
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+.platform img{
+  width: 20px;
+}
+nav ul{
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30%;
+}
+nav ul a{
+  color: white;
+  text-decoration: none;
+}
+nav ul a:hover{
+  color: #0063FF;
+}
+.menu{
+  z-index: 7;
+  position: relative;
+}
+
+
+
+
+
+/*
+==============================
+====       skills        =====
+==============================
+*/ 
+.skill{
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 70px;
+  border: 1px solid black;
+}
+.skill img{
+  width: 70px;
+}
+.skill span{
+  color: black;
+  text-transform: capitalize;
+}
+#all_skills{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 50px 50px;
+  gap: 30px;
+  margin: 0 10px
+}
+#skil{
+  margin: 50px 20px;
+}
+#skills h2{
+  font-size: 30px;
+  margin: 20px;
+}
+
+
+
+
+
+
+/*
+==============================
+====        prodcuts     =====
+==============================
+*/ 
+#project > h2{
+  color: black;
+  margin-bottom: 50px;
+  margin-left: 70%;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background: #000000;
+  padding: 50px 30px;
+}
+.projects:empty::before {
+  content: "There are no projects yet, it will be available soon.";
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  z-index: 7;
+}
+.projec{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  margin: 20px 10px;
+  box-shadow: 5px 5px 0 #FFFFFF8A;
+  transition: .3s ease;
+}
+.projec:hover{
+  transform: scale(1.1);
+}
+.projec img{
+  width: 100%;
+}
+
+.information {
+  padding: 20px 15px;
+}
+.information p{
+  color: #606060;
+  font-weight: 300;
+}
+.information h3{
+  margin: 10px 0;
+  color: #000000;
+}
+.information a{
+  padding: 8px 15px;
+  background: var(--color-bluish-purple);
+  border-radius: 50px;
+  color: white;
+  margin: 20px 0 0 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/*
+==============================
+====       header        =====
+==============================
+*/ 
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  max-width: 1700px;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;right: 0;left: 0;
+  background: #FEFEFE;
+}
+.logo img{
+  width: 40px;
+}
+.logo a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+/*
+==============================
+====        about        =====
+==============================
+*/ 
+#about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  padding: 90px 10px;
+  flex-direction: column;
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-top: 1px solid var(--color-bluish-purple);
+  background: #000000;
+  transition: 0.3s all ease-in-out;
+} 
+#about img{
+  border-radius: 50%;
+  border: 2px solid #0063FF;
+}
+.about-title {
+  padding: 0 21px;
+  
+}
+.about-title h3{
+  color: white;
+  font-size: 40px;
+}
+.about-title h3 span{
+  color: #0063FF;
+}
+.about-title p{
+  color: white;
+  margin: 10px 0;
+  margin-bottom: 70px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.btn2{
+  text-decoration: none;
+  color: white;
+  border: 1.5px solid white;
+  padding: 10px 30px;
+}
+
+
+
+
+/*
+==============================
+==== navbar and platform =====
+==============================
+*/ 
+.contact-form {
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-bluish-purple);
+  transition: border-color 0.3s ease;
+  background: transparent;
+  color: black;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--color-bluish-purple);
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  color: #fff;
+  background: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: white;
+  border: 1px solid black;
+  color: black;
+}
+
+
+
+
+
+/*
+==============================
+====  back button top    =====
+==============================
+*/ 
+.btn_top{
+    width: 50px;
+    height: 50px;
+    background: #0063Fc;
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 99;
+    box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.637);
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+
+/*
+==============================
+====        footer       =====
+==============================
+*/ 
+
+footer{
+  background: black;
+  margin-top: 30px;
+  padding: 30px;
+  text-align: center;
+}
+footer {
+  color: white;
+}
+footer div p{
+  font-weight: 300;
+  font-size: 10px;
+}
+footer a{
+  color: white;
+}
+
+
+/*
+==============================
+==== navbar and platform =====
+==============================
+*/
+
+/*
+==============================
+==== navbar and platform =====
+==============================
+*/ 
+
+
+/*
+==============================
+==== navbar and platform =====
+==============================
+*/ 

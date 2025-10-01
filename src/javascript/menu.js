@@ -6,7 +6,7 @@ let links = document.querySelectorAll('.link a');
 nav.style.marginLeft = '6000px';
 menu.onclick = () => {
     if (nav.style.marginLeft === "6000px") {
-      nav.style.marginLeft = '60px';
+      nav.style.marginLeft = '136px';
       menu.src = 'public/icon/clear.svg';
     } else {
       nav.style.marginLeft = '6000px';
