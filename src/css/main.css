@@ -16,15 +16,23 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
 }
-/* hero style */
+
+
+
+
+
+
+/*
+======================
+======   hero  ======= 
+======================
+*/
 .hero{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 140px;
-  
-  text-align: center;
   width: 80%;
   margin: auto;
   margin-top: 120px;
@@ -46,17 +54,16 @@ html {
   width: 250px;
   margin-top: 90px;
   border-radius: 50%;
+  box-shadow: 0 0 10px var(--light-Ramadan);
 }
 .btn{
-  padding: 8px 24px;
-  background: transparent;
+  padding: 12px 24px;
+  background: var(--modern-yellow);
   margin: 20px 0;
   text-decoration: none;
-  color: white;
-  border: 1.5px solid var(--modern-yellow);
+  color: black;
+  border-radius: 50px;
 }
-
-
 
 
 
@@ -73,7 +80,8 @@ html {
 */ 
 .link{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 }
@@ -90,11 +98,13 @@ nav{
 }
 .platform ul{
   display: flex;
-  gap: 10px;
+  gap: 24px;
   list-style-type: none;
+  flex-direction: row;
 }
 .platform img{
-  width: 20px;
+  width: 24px;
+  
 }
 nav ul{
   text-align: center;
@@ -114,6 +124,7 @@ nav ul a:hover{
 .menu{
   z-index: 7;
   position: relative;
+  width: 38px;
 }
 
 
@@ -126,26 +137,27 @@ nav ul a:hover{
 ==============================
 */ 
 .skill{
-  background: var(--light-purple);
+  background: #A855F75C;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px;
+  padding: 8px 1px;
+  border-radius: 10px;
 }
 .skill img{
-  width: 70px;
+  width: 50px;
 }
 .skill span{
-  color: black;
+  color: #A855F7;
   text-transform: capitalize;
 }
 #all_skills{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  padding: 50px 50px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 10px 10px;
   gap: 30px;
-  margin: 0 10px
+  margin: 32px 10px;
 }
 #skil{
   margin: 50px 20px;
@@ -153,6 +165,7 @@ nav ul a:hover{
 #skills h2{
   font-size: 30px;
   margin: 20px;
+  color: white;
 }
 
 
@@ -162,11 +175,16 @@ nav ul a:hover{
 
 /*
 ==============================
-====        prodcuts     =====
+====        project      =====
 ==============================
 */ 
+#project{
+  border-bottom: .5px solid var(--light-Ramadan);
+  border-top: .5px solid var(--light-Ramadan);
+  margin: 0 24px;
+}
 #project > h2{
-  color: black;
+  color: white;
   margin-bottom: 50px;
   margin-left: 70%;
 }
@@ -174,7 +192,6 @@ nav ul a:hover{
 .projects{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  background: #000000;
   padding: 50px 30px;
 }
 .projects:empty::before {
@@ -186,39 +203,38 @@ nav ul a:hover{
   z-index: 7;
 }
 .projec{
-  background: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
   margin: 20px 10px;
-  box-shadow: 5px 5px 0 #FFFFFF8A;
   transition: .3s ease;
-}
-.projec:hover{
-  transform: scale(1.1);
-}
+  max-width: 300px;
+  border: 1px solid var(--Modern-heavenly);
+  border-radius: 10px;
+} 
 .projec img{
   width: 100%;
+  border-radius: 10px;
 }
 
 .information {
   padding: 20px 15px;
 }
 .information p{
-  color: #606060;
+  color: var(--light-Ramadan);
   font-weight: 300;
 }
 .information h3{
   margin: 10px 0;
-  color: #000000;
+  color: #fff;
 }
 .information a{
   padding: 8px 15px;
-  background: var(--color-bluish-purple);
+  background: var(--modern-yellow);
   border-radius: 50px;
-  color: white;
+  color: black;
   margin: 20px 0 0 0;
   display: inline-block;
   text-decoration: none;
@@ -241,7 +257,6 @@ nav ul a:hover{
   width: 100%;
   margin: auto;
   max-width: 1700px;
-  border-bottom: 1px solid black;
   padding: 10px 20px;
   position: fixed;
   top: 0;right: 0;left: 0;
@@ -278,10 +293,10 @@ nav ul a:hover{
   padding: 90px 10px;
   flex-direction: column;
   text-align: center;
-  border-bottom: 1px solid black;
-  border-top: 1px solid var(--color-bluish-purple);
-  background: #000000;
+  border-bottom: .5px solid var(--light-Ramadan);
+  border-top: .5px solid var(--light-Ramadan);
   transition: 0.3s all ease-in-out;
+  margin: 0 20px;
 } 
 #about img{
   border-radius: 50%;
@@ -291,18 +306,23 @@ nav ul a:hover{
   padding: 0 21px;
   
 }
-.about-title h3{
+.about-title h2{
   color: white;
   font-size: 40px;
+  position: absolute;
+  left: 20px;
+  top: 747px;
+  background: var(--dark-blue);
+  padding: 0 16px;
 }
-.about-title h3 span{
-  color: #0063FF;
+.about-title h2 span{
+  color: var(--Modern-heavenly);
 }
 .about-title p{
   color: white;
   margin: 10px 0;
   margin-bottom: 70px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
 }
 .btn2{
@@ -317,7 +337,7 @@ nav ul a:hover{
 
 /*
 ==============================
-==== navbar and platform =====
+====     conent form     =====
 ==============================
 */ 
 .contact-form {
@@ -328,8 +348,9 @@ nav ul a:hover{
 
 .contact-form h2 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #000;
+  margin-bottom: 32px;
+  color: var(--Modern-heavenly);
+  font-size: 32px;
 }
 
 .contact-form label {
@@ -344,15 +365,16 @@ nav ul a:hover{
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
-  border: 1px solid var(--color-bluish-purple);
+  border: 1px solid var(--Modern-heavenly);
   transition: border-color 0.3s ease;
   background: transparent;
-  color: black;
+  color: var(--Modern-heavenly);
+  border-radius: 8px;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: var(--color-bluish-purple);
+  border-color: var(--modern-yellow);
   outline: none;
 }
 
@@ -360,16 +382,16 @@ nav ul a:hover{
   width: 100%;
   padding: 12px;
   border: none;
-  color: #fff;
-  background: black;
+  color: #000;
+  background: var(--modern-yellow);
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s ease;
+  border-radius: 8px;
 }
 
 .contact-form button:hover {
-  background: white;
-  border: 1px solid black;
+  background: var(--Modern-heavenly);
   color: black;
 }
 
@@ -385,7 +407,7 @@ nav ul a:hover{
 .btn_top{
     width: 50px;
     height: 50px;
-    background: #0063Fc;
+    background: var(--Modern-heavenly);
     color: black;
     position: fixed;
     bottom: 20px;
@@ -410,18 +432,18 @@ nav ul a:hover{
 */ 
 
 footer{
-  background: black;
+  background: var(--dark-blue);
   margin-top: 30px;
   padding: 30px;
   text-align: center;
-}
-footer {
   color: white;
 }
 footer div p{
   font-weight: 300;
   font-size: 10px;
+  margin: 16px 0;
 }
 footer a{
   color: white;
+  padding: 32px 0;
 }
