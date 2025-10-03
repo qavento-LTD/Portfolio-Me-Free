@@ -19,3 +19,9 @@ links.forEach(link => {
         menu.src = 'public/icon/menu.svg';
     } 
 });
+
+
+
+window.onscroll = function() {
+   nav.style.display = 'none';
+}
